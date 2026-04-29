@@ -1,5 +1,3 @@
-Based on the files provided in the repository, here is a comprehensive README designed to meet the specific requirements of the Capstone 2 project.
-
 # Spotify User Behavior and Patterns Analysis
 
 | Field | Details |
