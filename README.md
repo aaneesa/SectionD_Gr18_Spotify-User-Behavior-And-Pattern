@@ -59,27 +59,27 @@ This analysis enables stakeholders to design targeted retention campaigns for "L
 | **Conversion Rate** | Rate at which ad-exposed users move to Premium. | `Count(Ad_Converted) / Count(Ad_Interacted)` |
 
 ## Tableau Dashboard
-* **Dashboard URL:** [Tableau Public Link Placeholder]
+* **Dashboard URL:** (https://public.tableau.com/views/Spotify_Dashboard_17774564636670/Dashboard1?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 * **Executive View:** High-level summary of Churn Rate, Total Active Users, and Revenue distribution by subscription type.
 * **Operational View:** Drill-down into age group distributions, primary device usage, and engagement levels per country.
 * **Main Filters:** Country, Subscription Type, Age Group, and Gender.
 
 ## Key Insights
-1.  **Engagement Consistency:** Churned users and active users show almost identical mean listening hours (approx. 9.95 hrs/week), suggesting that total volume of time is a weaker predictor of churn than previously hypothesized.
-2.  **Skip Behavioral Parity:** Statistical testing (Mann-Whitney U) confirmed no significant difference in skip rates between churned and active users (p=0.47), indicating skipping is a universal behavior across segments.
-3.  **Tier Stability:** Subscription types (Free vs. Premium) do not show a statistically significant relationship with churn (Chi-square p=0.58), suggesting churn triggers are behavioral rather than cost-driven.
-4.  **Feature Stickiness:** "Personalized Playlists" and "Social Sharing" emerge as the most-liked features across the 18-24 and 25-34 age groups.
-5.  **Age Distribution:** The platform sees a peak in the 25-34 age segment, with engagement scores tapering off significantly in the 55+ demographic.
-6.  **Device Dominance:** Mobile remains the primary device across all churn statuses, but Desktop users show higher playlist creation rates.
-7.  **Ad-to-Subscription Funnel:** Conversion rates are highest among users who interact with ads specifically between 6 PM and 10 PM.
-8.  **Inactivity Warning:** Users reaching 3 months of inactivity have an 85% higher probability of formal churn within the following quarter.
+* Engagement Parity: High, Medium, and Low engagers all churn at similar rates (61.29–61.63%), suggesting total volume of time is a weak churn predictor.
+
+* Conversion Bottleneck: The transition from Ad Interaction (34.96%) to Conversion (24.87%) is the primary constraint.
+
+* Tier Stability: Subscription types do not show a statistically significant relationship with churn (p=0.58), indicating churn is behavioral, not cost-driven.
+
+* Feature Stickiness: "Personalized Playlists" and "Social Sharing" are the most liked features for users aged 18-34.
+
+* Inactivity Warning: Users inactive for 3 months have an 85% higher probability of formal churn next quarter
 
 ## Recommendations
-| # | Insight | Recommendation | Expected Impact |
-| :--- | :--- | :--- | :--- |
-| 1 | Inactivity Correlation | Automate "Come Back" push notifications after 45 days of zero listening hours. | 10-15% reduction in churn |
-| 2 | Feature Stickiness | Launch "Social Listening" events targeting the 25-34 age group to increase session frequency. | 5% increase in Engagement Score |
-| 3 | Tier Parity | Shift marketing focus from "Price Savings" to "Exclusive Discovery Features" for Premium retention. | Higher lifetime value (LTV) |
+#	Insight	Recommendation	Expected Impact
+1	Free is the largest cohort	Trigger Premium trial offers after behavioral thresholds.	Higher Conversion Rate
+2	High "Likely Churn" (38.56%)	Launch win-back programs with curated playlists for at-risk users.	10-15% Churn Reduction[cite: 1]
+3	Skips vs Rating uncorrelated	Re-evaluate recommendation engine models via A/B testing.	Lower Skips/Day
 
 ## Repository Structure
 ```text
@@ -104,3 +104,6 @@ sectiond_gr18_spotify-user-behavior-and-pattern/
 * **Python (Pandas, Scipy, Seaborn):** ETL, Statistical Testing, and Feature Importance Modeling.
 * **Tableau Public:** Interactive data storytelling.
 * **GitHub:** Version control and collaboration.
+
+## Contribution Matrix
+Team MemberETL & CleaningEDA & AnalysisStatistical AnalysisTableau DashboardReport & PPTAnwesha AdhikariYesLokendra SinghYesAjit Kumar PrasadYesAdarshYesAditya BhardwajYesAaryan YadavYes
