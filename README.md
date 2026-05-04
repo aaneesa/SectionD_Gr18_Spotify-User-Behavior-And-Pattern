@@ -76,10 +76,11 @@ This analysis enables stakeholders to design targeted retention campaigns for "L
 * Inactivity Warning: Users inactive for 3 months have an 85% higher probability of formal churn next quarter
 
 ## Recommendations
-#	Insight	Recommendation	Expected Impact
-1	Free is the largest cohort	Trigger Premium trial offers after behavioral thresholds.	Higher Conversion Rate
-2	High "Likely Churn" (38.56%)	Launch win-back programs with curated playlists for at-risk users.	10-15% Churn Reduction[cite: 1]
-3	Skips vs Rating uncorrelated	Re-evaluate recommendation engine models via A/B testing.	Lower Skips/Day
+| # | Insight | Recommendation | Expected Impact |
+| :--- | :--- | :--- | :--- |
+| 1 | Free is the largest cohort | Trigger Premium trial offers after behavioral thresholds. | Higher Conversion Rate |
+| 2 | High "Likely Churn" (38.56%) | Launch win-back programs with curated playlists for at-risk users. | 10-15% Churn Reduction |
+| 3 | Skips vs Rating uncorrelated | Re-evaluate recommendation engine models via A/B testing. | Lower Skips/Day |
 
 ## Repository Structure
 ```text
@@ -106,4 +107,11 @@ sectiond_gr18_spotify-user-behavior-and-pattern/
 * **GitHub:** Version control and collaboration.
 
 ## Contribution Matrix
-Team MemberETL & CleaningEDA & AnalysisStatistical AnalysisTableau DashboardReport & PPTAnwesha AdhikariYesLokendra SinghYesAjit Kumar PrasadYesAdarshYesAditya BhardwajYesAaryan YadavYes
+| Team Member | Dataset & Sourcing | ETL & Cleaning | EDA & Analysis | Statistical Analysis | Tableau Dashboard | Report Writing | PPT |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| Aaryan Yadav | Yes | | | | | Yes | Yes |
+| Anwesha Adhikari | Yes | | Yes | | | | |
+| Aditya Bhardwaj | Yes | | | | Yes | | |
+| Lokendra Singh | Yes | Yes | | | | | |
+| Adarsh | Yes | | | | Yes | | |
+| Ajit Kumar Prasad | Yes | | | Yes | | | |
